@@ -1,0 +1,41 @@
+*gnomey_vim.txt*  	For Vim version 7.3	Last change: 2011 October 22
+
+|gnomey-vim-description|		Description
+|gnomey-vim-configuration|	Configuration
+|gnomey-vim-author|		Author
+
+This plugin only works when Vim is compiled with support for Python and pygtk
+is installed.
+
+==============================================================================
+DESCRIPTION					*gnomey-vim-description*
+
+Gnomey Vim is a plugin for registering documents within the Gnome Recent
+Manager, so that they can later be accessed through the Gnome Shell search
+or in standard file selection dialog.
+
+Some filetypes are automatically ignored and never registered. This
+functionality is intended for files used in commiting to content management
+systems like vim. So far these types are gitcommit and svn.
+
+==============================================================================
+CONFIGURATION					*gnomey-vim-configuration*
+
+There are a few options to customize the behaviour of this plugin.
+
+						*g:disablerecent*
+If you wish to stop registering files, define global variable disablerecent to
+value of 1, i.e.
+>
+	:let g:disablerecent = 1 <
+
+==============================================================================
+AUTHOR						*gnomey-vim-author*
+
+This plugin was written by Lubomír Sedlář. To contact the author, please email
+lubomir.sedlar <at> gmail <dot> com
+
+
+==============================================================================
+
+ vim:tw=78:ts=8:sw=8:ft=help:norl:
