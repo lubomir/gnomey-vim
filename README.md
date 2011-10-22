@@ -13,5 +13,5 @@ Next requirement is `pygtk` and that should be all.
 
 ## Installation
 
-Simply copy the `recent.vim` file into your `~/.vim/plugins` directory and
+Simply copy the `recent.vim` file into your `~/.vim/plugin` directory and
 enjoy!
