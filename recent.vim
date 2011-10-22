@@ -3,6 +3,9 @@ function! AddToRecentFiles()
     if exists("g:disablerecent") && g:disablerecent == 1
         return
     endif
+    if index(s:ignored, &filetype) != -1
+        return
+    endif
     python <<EOF
 import gtk, vim
 uri = u'file://' + vim.eval("expand(\"%:p\")")
@@ -13,6 +16,9 @@ while gtk.events_pending():
 gtk.main_iteration()
 EOF
 endfunction
+
+" filetypes that are ignored
+let s:ignored = ["gitcommit", "svn"]
 
 " After saving a file, add it to recent documents
 autocmd BufWritePost * :call AddToRecentFiles()
