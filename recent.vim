@@ -1,5 +1,8 @@
 " This function adds current file to the recents
 function! AddToRecentFiles()
+    if exists("g:disablerecent") && g:disablerecent == 1
+        return
+    endif
     python <<EOF
 import gtk, vim
 uri = u'file://' + vim.eval("expand(\"%:p\")")
