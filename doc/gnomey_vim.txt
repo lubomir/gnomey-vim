@@ -15,8 +15,8 @@ Manager, so that they can later be accessed through the Gnome Shell search
 or in standard file selection dialog.
 
 Some filetypes are automatically ignored and never registered. This
-functionality is intended for files used in commiting to content management
-systems like vim. So far these types are gitcommit and svn.
+functionality is intended for files used as commit messages for content
+management systems. So far these types are gitcommit and svn.
 
 ==============================================================================
 CONFIGURATION					*gnomey-vim-configuration*
